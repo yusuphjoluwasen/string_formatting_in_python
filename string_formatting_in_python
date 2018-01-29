@@ -1,0 +1,35 @@
+1) %s - to format a string in a python strings
+e.g. 'his name is %s %('craig')
+      Ans: his name is craig
+
+2) %d - to format integers in a string
+e.g. 'his phone_number is %(8099677123)
+      his phone_number is 8099677123
+
+3) %f - to format decimal_numbers/floats in  a string 
+e.g. 'the value is %.2f' %(12.56789) 
+      Ans: the value is 12.57
+
+4) to specify the total length of the value/add spaces to the value
+e.g. 'the value is %8.2f' %(12.56789) #the total length of the float will be 8 and the number of decimal places will be 2, and four spaces 
+      will be added to the float to complement the total length of eight.
+      Ans: the value is     12.57
+      
+e.g. 'his name is %10s %('craig')  #the total length will be 10, it will also be complemented by 5 empty spaces.
+      Ans: his name is      craig
+      
+using the format()
+5) 'kola has {} {}'.format('dogs')
+    Ans: kola has dogs dogs
+    
+6) 'kola has {} and {}'.format('dogs', 'chickens')
+    kola has dogs and chicken
+    
+7) 'kola has {0}, {1}, {2} and {0} as pets'.format('dogs', 'chickens', 'ostrichs')
+    Ans: kola has dogs, chickens, ostrichs and dogs as pets
+    
+8) 'kola\'s number is {1:d}, name of friend as {0:s} and amount as {2:5.3f}'.format('balo', 967755, 89.5676779)
+    #the positions can spoecified by putting 0, 1, and 2 in the bracket in line with its datatype
+    #{1:d} - it belongs to the 2nd position and it is an integer
+    #{0:s} - it belongs to the first position and it is a string
+    Ans: kola's number is 967755, name of friend as balo and amount as 89.568
